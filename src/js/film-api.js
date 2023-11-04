@@ -18,26 +18,31 @@ const bodys = {
   //   search: 'search/movie?include_adult=false&language=en-US&page=1',
   search: 'search/movie?',
   //   details: 'movie/movie_id?language=en-US',
-//   details: 'movie/movie_id?',//ten dobry!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //   details: 'movie/movie_id?',//ten dobry!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   details: 'movie/',
   //   youtube: 'movie/movie_id/videos?language=en-US',
-//   youtube: 'movie/movie_id/videos?', //ten dobry!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //   youtube: 'movie/movie_id/videos?', //ten dobry!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   youtube: 'movie/',
-  movie_id: ['945729', '507089', '787781', '790459'],//movie_id = id, ??? = title, ??? = original_title, ??? = overview, ???? = poster_path, ??? = vote_average, ??? = release_date >>> 	"2023-09-13", ??? = genre_ids,  
-  genre_ids : [ 9648, 53, 80]
+  movie_id: ['945729', '507089', '787781', '790459'], //movie_id = id, ??? = title, ??? = original_title, ??? = overview, ???? = poster_path, ??? = vote_average, ??? = release_date >>> 	"2023-09-13", ??? = genre_ids,
+  genre_ids: [9648, 53, 80],
 };
 //api.themoviedb.org/3/movie/550?api_key=4e243d8288d1053ad482b1cbee56dc45
 
+// console.log('ALL: ', BASE_PATH + bodys.all + 'api_key=' + FILM_API_KEY);
+const allMovies = BASE_PATH + bodys.all + 'api_key=' + FILM_API_KEY;
 
+// console.log('SEARCH: ', BASE_PATH + bodys.search + 'api_key=' + FILM_API_KEY);
+const search = BASE_PATH + bodys.search + 'api_key=' + FILM_API_KEY;
 
+// console.log('DETAILS: ', BASE_PATH + bodys.details + bodys.movie_id[0] + '?'+ 'api_key=' + FILM_API_KEY);
+const details = BASE_PATH + bodys.details + bodys.movie_id[0] + '?' + 'api_key=' + FILM_API_KEY;
 
+// console.log('YOU TUBE: ', BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY);
+const youTube =
+  BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY;
 
-console.log('ALL: ', BASE_PATH + bodys.all + 'api_key=' + FILM_API_KEY);
+export { allMovies, search, details, youTube };
 
-console.log('SEARCH: ', BASE_PATH + bodys.search + 'api_key=' + FILM_API_KEY);
-
-console.log('DETAILS: ', BASE_PATH + bodys.details + bodys.movie_id[0] + '?'+ 'api_key=' + FILM_API_KEY);
-console.log('YOU TUBE: ', BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY);
 //--------POBIERALNIA-----------------
 //---ALL------
 // const options = {
