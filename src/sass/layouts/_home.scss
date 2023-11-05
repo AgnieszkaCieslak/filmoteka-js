@@ -1,7 +1,7 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: rgb(172, 255, 127);
 }
 .button {
   margin: 5 0 5 0;
@@ -13,7 +13,7 @@
   font-weight: 700;
   cursor: pointer;
   color: rgb(87, 75, 108);
-  background-color: rgb(174, 239, 239);
+  background-color: rgb(174, 183, 239);
 }
 .input {
   width: 20vw;
@@ -22,6 +22,6 @@
 }
 .link {
   font-size: 25px;
-  color: blue;
+  color: rgb(255, 0, 0);
   text-decoration: none;
 }
