@@ -1,5 +1,6 @@
 {
   "name": "filmoteka-js",
+  "type":"module",
   "version": "1.1.0",
   "description": "",
   "homepage": "https://github.com/AgnieszkaCieslak/filmoteka-js",
