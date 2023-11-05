@@ -38,7 +38,7 @@ markers.btnSearch.addEventListener('click', e => {
   SM.save('search', search);
   const httpStringSearch = SM.load('search');
   console.log('httpString: ', httpStringSearch);
-  markers.search.innerHTML = `<a href=${httpStringSearch} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">the most popular movies Today</a>`;
+  markers.search.innerHTML = `<a href=${httpStringSearch} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">search movies</a>`;
 
 });
 
@@ -47,8 +47,9 @@ markers.btnDetails.addEventListener('click', e => {
   e.stopPropagation();
   SM.save('details', details);
   const httpStringDetails = SM.load('details');
+
   console.log('httpString: ', httpStringDetails);
-  markers.details.innerHTML = `<a href=${httpStringDetails} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">the most popular movies Today</a>`;
+  markers.details.innerHTML = `<a href=${httpStringDetails} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">full info about movie</a>`;
 });
 
 markers.btnYt.addEventListener('click', e => {
@@ -57,7 +58,7 @@ markers.btnYt.addEventListener('click', e => {
   SM.save('youTube', youTube);
   const httpStringYT = SM.load('youTube');
   console.log('httpString: ', httpStringYT);
-  markers.YT.innerHTML = `<a href=${httpStringYT} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">the most popular movies Today</a>`;
+  markers.YT.innerHTML = `<a href=${httpStringYT} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">youTube trailer</a>`;
 });
 
 //--------------------------
