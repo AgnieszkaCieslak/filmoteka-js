@@ -1,5 +1,5 @@
-import 'src/sass/main.scss';
-import 'src/js/markers';
-import 'src/js/film-api';
-import 'src/js/eventListenery';
-import 'src/js/storage-methods';
+import './sass/main.scss';
+import './js/markers';
+import './js/film-api';
+import './js/eventListenery';
+import './js/storage-methods';
