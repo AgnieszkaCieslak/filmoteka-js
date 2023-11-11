@@ -47,58 +47,44 @@ const youTube = BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'ap
   axios.defaults.baseURL = BASE_PATH;
   const htmlBody = bodys.all + 'api_key=' + FILM_API_KEY; 
 
-async function getAllPopularMovies(){
-  const { data } = await axios.get(htmlBody);
-   return data;
-      };
+// async function getAllPopularMovies(){
+//   const { data } = await axios.get(htmlBody);
+//    return data;
+//       };
    
-      document.addEventListener('DOMContentLoaded', async () => {
-        // const layout = document.querySelector('.layout');
-        // const booksContainer = document.querySelector('.books-container');
-        // const homeBooksByType = document.querySelector('.home-typeBook');
-        let allMoviesData = null;
+//       document.addEventListener('DOMContentLoaded', async () => {
+        
+        // let allMoviesData = null;
       
-        const moviesData = await getAllPopularMovies();
+        // const moviesData = await getAllPopularMovies();
+//------------------
+      // function jasnaCholera() {
+      //   moviesData.forEach(item => {
+      //     const movieTitle = document.createElement('h2');
+      //     movieTitle.textContent = item.list_name;
+      //     movieTitle.classList.add('movie-name');
       
-        moviesData.forEach(item => {
-          const movieTitle = document.createElement('h2');
-          movieTitle.textContent = item.list_name;
-          movieTitle.classList.add('movie-name');
-      
-          const movieList = document.createElement('ul');
-          movieList.classList.add('movie-list');
-      
-          //UUdodanie przycisku "see more"//
-          // const seeMoreButton = document.createElement('button');
-          // seeMoreButton.textContent = 'See More';
-          // seeMoreButton.classList.add('see-more-button');
-          // seeMoreButton.dataset.categoryId = category.list_name;
-          // //obsluga przycisku 'see more'
-      
-          // seeMoreButton.addEventListener('click', async event => {
-          //   const categoryId = event.target.dataset.categoryId;
-          //   homeBooksByType.style.display = 'none';
-          //   allMoviesData = await getSelectedCategory(categoryId);
-          //   renderSelectedCategory();
-          // });
-          category.books.forEach(item => {
-            const bookItem = document.createElement('li');
-            bookItem.classList.add('book-item');
-            bookItem.innerHTML = `
-              <img class="book-item_image" src="${item.book_image}" alt="${item.title}" data-id="${item._id}">
-              <h3 class="book-item_title">${item.title}</h3>
-              <p class="book-item_author"> ${item.author}</p>
-            `;
-            movieList.appendChild(bookItem);
-          });
-          markers.outputAll.appendChild(movieTitle);
-          markers.outputAll.appendChild(movieList);
-          markers.outputAll.appendChild(seeMoreButton);
-        }
-        )
-      });
+      //     const movieList = document.createElement('ul');
+      //     movieList.classList.add('movie-list');
+                
+      //     category.books.forEach(item => {
+      //       const bookItem = document.createElement('li');
+      //       bookItem.classList.add('book-item');
+      //       bookItem.innerHTML = `
+      //         <img class="book-item_image" src="${item.book_image}" alt="${item.title}" data-id="${item._id}">
+      //         <h3 class="book-item_title">${item.title}</h3>
+      //         <p class="book-item_author"> ${item.author}</p>
+      //       `;
+      //       movieList.appendChild(bookItem);
+      //     });
+      //     markers.outputAll.appendChild(movieTitle);
+      //     markers.outputAll.appendChild(movieList);
+      //     markers.outputAll.appendChild(seeMoreButton);
+      //   }
+      //   )
+      // });
 
-
+//-----------------------------------
   // for (const item of data){
   //   console.log(item);
   //   console.log(item.id);
