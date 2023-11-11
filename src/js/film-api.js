@@ -1,5 +1,5 @@
 import axios from 'axios';
-import markers from "./markers";
+import markers from './markers';
 
 const FILM_API_KEY = '4e243d8288d1053ad482b1cbee56dc45';
 // Przeczytaj kod odczytu API: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZTI0M2Q4Mjg4ZDEwNTNhZDQ4MmIxY2JlZTU2ZGM0NSIsInN1YiI6IjY1NDYyNTg4NmJlYWVhMDBlYWY3N2IzZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.OWD6PCpiZT5kUqd_jZX8HbncGhsqOzYPOFKT3MDIa0s
@@ -12,7 +12,7 @@ const FILM_API_KEY = '4e243d8288d1053ad482b1cbee56dc45';
 // Szczegóły API
 // If you'd like to edit the details of your app, click here.
 
-export { allMovies, search, details, youTube }; 
+export { allMovies, search, details, youTube };
 //-------------------------------
 
 const BASE_PATH = 'https://api.themoviedb.org/3/';
@@ -42,53 +42,53 @@ const search = BASE_PATH + bodys.search + 'api_key=' + FILM_API_KEY;
 const details = BASE_PATH + bodys.details + bodys.movie_id[0] + '?' + 'api_key=' + FILM_API_KEY;
 
 // console.log('YOU TUBE: ', BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY);
-const youTube = BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY;
+const youTube =
+  BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'api_key=' + FILM_API_KEY;
 
-  axios.defaults.baseURL = BASE_PATH;
-  const htmlBody = bodys.all + 'api_key=' + FILM_API_KEY; 
+// axios.defaults.baseURL = BASE_PATH;
+// const htmlBody = bodys.all + 'api_key=' + FILM_API_KEY;
 
 // async function getAllPopularMovies(){
 //   const { data } = await axios.get(htmlBody);
 //    return data;
 //       };
-   
+
 //       document.addEventListener('DOMContentLoaded', async () => {
-        
-        // let allMoviesData = null;
-      
-        // const moviesData = await getAllPopularMovies();
+
+// let allMoviesData = null;
+
+// const moviesData = await getAllPopularMovies();
 //------------------
-      // function jasnaCholera() {
-      //   moviesData.forEach(item => {
-      //     const movieTitle = document.createElement('h2');
-      //     movieTitle.textContent = item.list_name;
-      //     movieTitle.classList.add('movie-name');
-      
-      //     const movieList = document.createElement('ul');
-      //     movieList.classList.add('movie-list');
-                
-      //     category.books.forEach(item => {
-      //       const bookItem = document.createElement('li');
-      //       bookItem.classList.add('book-item');
-      //       bookItem.innerHTML = `
-      //         <img class="book-item_image" src="${item.book_image}" alt="${item.title}" data-id="${item._id}">
-      //         <h3 class="book-item_title">${item.title}</h3>
-      //         <p class="book-item_author"> ${item.author}</p>
-      //       `;
-      //       movieList.appendChild(bookItem);
-      //     });
-      //     markers.outputAll.appendChild(movieTitle);
-      //     markers.outputAll.appendChild(movieList);
-      //     markers.outputAll.appendChild(seeMoreButton);
-      //   }
-      //   )
-      // });
+// function jasnaCholera() {
+//   moviesData.forEach(item => {
+//     const movieTitle = document.createElement('h2');
+//     movieTitle.textContent = item.list_name;
+//     movieTitle.classList.add('movie-name');
+
+//     const movieList = document.createElement('ul');
+//     movieList.classList.add('movie-list');
+
+//     category.books.forEach(item => {
+//       const bookItem = document.createElement('li');
+//       bookItem.classList.add('book-item');
+//       bookItem.innerHTML = `
+//         <img class="book-item_image" src="${item.book_image}" alt="${item.title}" data-id="${item._id}">
+//         <h3 class="book-item_title">${item.title}</h3>
+//         <p class="book-item_author"> ${item.author}</p>
+//       `;
+//       movieList.appendChild(bookItem);
+//     });
+//     markers.outputAll.appendChild(movieTitle);
+//     markers.outputAll.appendChild(movieList);
+//     markers.outputAll.appendChild(seeMoreButton);
+//   }
+//   )
+// });
 
 //-----------------------------------
-  // for (const item of data){
-  //   console.log(item);
-  //   console.log(item.id);
- 
+// for (const item of data){
+//   console.log(item);
+//   console.log(item.id);
 
 // console.log('htmlBody: ', htmlBody); //trending/all/day?api_key=4e243d8288d1053ad482b1cbee56dc45
 // console.log('getAllPopularMovies: ', getAllPopularMovies());//Promise jak powinien byc
@@ -104,14 +104,13 @@ const youTube = BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'ap
 // };
 // a();
 
-
 // function b () {
 //   const movieData = getAllPopularMovies();
 //   console.log('movieData: ', movieData);
 //   for (array of movieData){
 //   console.log(array);
 //   console.log(movieData[key]);
-// }}; 
+// }};
 // console.log('b: ', b());
 // console.log('getAllPopularMovies(Array): ', getAllPopularMovies(Array[0]));
 // const movieData = getAllPopularMovies();
@@ -128,10 +127,10 @@ const youTube = BASE_PATH + bodys.youtube + bodys.movie_id[1] + '/videos?' + 'ap
 //   <h3 class="book-item_title">${book.title}</h3>
 //   <p class="book-item_author"> ${book.author}</p>`;
 // })
-// 
-// 
-// 
-// 
+//
+//
+//
+//
 //--------POBIERALNIA-----------------
 //---ALL------
 // const options = {
