@@ -4,7 +4,7 @@
   background-color: rgb(172, 255, 127);
 }
 .button {
-  margin: 5 0 5 0;
+  margin: 5 0 5 5;
   width: 20vw;
   min-width: 170px;
   max-width: 250px;
@@ -24,4 +24,16 @@
   font-size: 25px;
   color: rgb(255, 0, 0);
   text-decoration: none;
+}
+.output{
+  margin-left: 5px;
+}
+.output-all{
+margin: 0 5 10 5;
+  // height: 50px;
+  background-color: rgb(0, 115, 255);
+}
+.output-all p{
+  padding-left:10px;
+  color:azure;
 }
