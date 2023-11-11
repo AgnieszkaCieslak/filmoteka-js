@@ -21,7 +21,7 @@ markers.btnALL.addEventListener('click', e => {
   SM.save('allMovies', JSON.stringify(allMovies));
 
  const httpStringAll = SM.load('allMovies');
- console.log('httpString: ', httpStringAll);
+//  console.log('httpString: ', httpStringAll);
 //   markers.all.textContent = e.currenTarget.value;
 // markers.all.textContent = httpString;// czysty niedziałajacy string
 // markers.all.innerHTML = SM.load('allMovies');
@@ -37,7 +37,7 @@ markers.btnSearch.addEventListener('click', e => {
   e.stopPropagation();
   SM.save('search', search);
   const httpStringSearch = SM.load('search');
-  console.log('httpString: ', httpStringSearch);
+  // console.log('httpString: ', httpStringSearch);
   markers.search.innerHTML = `<a href=${httpStringSearch} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">search movies</a>`;
 
 });
@@ -48,7 +48,7 @@ markers.btnDetails.addEventListener('click', e => {
   SM.save('details', details);
   const httpStringDetails = SM.load('details');
 
-  console.log('httpString: ', httpStringDetails);
+  // console.log('httpString: ', httpStringDetails);
   markers.details.innerHTML = `<a href=${httpStringDetails} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">full info about movie</a>`;
 });
 
@@ -57,9 +57,25 @@ markers.btnYt.addEventListener('click', e => {
   e.stopPropagation();
   SM.save('youTube', youTube);
   const httpStringYT = SM.load('youTube');
-  console.log('httpString: ', httpStringYT);
+  // console.log('httpString: ', httpStringYT);
   markers.YT.innerHTML = `<a href=${httpStringYT} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">youTube trailer</a>`;
 });
 
 //--------------------------
-
+// generowanie wyników 
+// --------------------------
+// markers.outputAll.addEventListener('click', e => {
+//   console.log(id);
+//   e.stopPropagation();
+  // SM.save('youTube', youTube);
+  // const httpStringYT = SM.load('youTube');
+  // console.log('httpString: ', httpStringYT);
+  // markers.id.innerHTML = `<a href=${httpStringYT} class="link" target="_blank" crossorigin="anonymous"  rel="noopener noreferrer">youTube trailer</a>`;
+// });
+markers.outputAll.innerHTML = `<p>tutaj ma sie pokazac plakat filmu</p>
+<p>tytaj ma byc jego tytuł</p>
+<p>tutaj ma byc jego data premiery</p>
+<p>tytaj ma byc jego oryginalny tytuł</p>
+<p>tutaj ma byc jego jezyk oryginalny</p>
+<p>tytaj ma byc jego opis</p>
+<p>tutaj ma byc jego średnia popularnosc</p>`
